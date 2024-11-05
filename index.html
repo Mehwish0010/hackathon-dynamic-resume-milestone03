@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+ 
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder</h1>
+    <section id="formSection">
+        <form id="resumeForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name"> Full Name:</label>
+            <input type="text" id="name"  placeholder="required" required>
+            <label for="email">Role:</label>
+            <input type="text" id="role"  placeholder="required" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="required" required>
+            <label for="email" >Contact Number:</label>
+            <input type="text" id="contact"  placeholder="contact number" required>
+            </fieldset>
+            <fieldset>
+            <legend>Profile Picture</legend>
+            <input type="text" id="profilePic" placeholder="Profile Picture URL"></fieldset>
+          <fieldset>
+            <fieldset>
+            <legend>Expertise</legend><textarea id="expertise" placeholder="Expertise" required></textarea></fieldset>
+    <fieldset><legend>  Skills</legend>     <textarea id="skills" placeholder=" (Add multiple with comma seprated )" required></textarea></legend></fieldset>
+
+    <fieldset><legend>Hobbies</legend>       <textarea id="hobbies" placeholder="Hobbies (Add multiple with comma seprated) " required></textarea></fieldset>
+     <fieldset><legend>Education</legend>       <textarea id="education" placeholder="Education (newline-separated)" required></textarea></fieldset>
+      <fieldset><legend>Experience</legend>      <textarea id="experience" placeholder="Experience (newline-separated)" required></textarea></fieldset>
+            <button type="submit">Generate Resume</button>
+        </form>
+    </section>
+
+    <section class="resume" id="resumeOutput">
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

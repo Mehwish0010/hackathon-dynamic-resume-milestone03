@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+:root {
+    --bg-clr: #3d444a;
+    --form-bg: steelblue;
+    --resume-bg: #F4F6FF;
+    --rleft-bg: #FBD46D;
+    --rright-bg: #4F8A8B;
+    --primary-text-clr: #07031A;
+    --input-bg: rgb(205, 211, 215);
+    --button-bg: black;
+    --button-hover: grey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Calistoga", serif, cursive;
+}
+
+body {
+    background: var(--bg-clr);
+    color: var(--primary-text-clr);
+    padding: 20px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* Header Styling */
+h1, h2 {
+    text-align: center;
+    color: white;
+    font-family: "Calistoga", serif, cursive;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 40px 0 10px;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: var(--form-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: var(--primary-text-clr);
+}
+
+fieldset {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--form-bg);
+}
+
+legend {
+    font-weight: bold;
+    color: black;
+    
+    font-size :13px ;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+input, textarea {
+    width: calc(100% - 1px);
+    padding: 8px;
+    margin-top: 4px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--input-bg);
+}
+
+button {
+    display: block;
+    width: 50%;
+    padding: 5px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+button:hover {
+    color: var(--button-hover);
+}
+input::placeholder, textarea::placeholder {
+    color: #777;
+    font-style: italic;
+    opacity: 0.8;
+    font: 1em sans-serif;
+}
+
+/* Resume Output Styling */
+.resume {
+    width: 800px;
+    max-width: 100%;
+    margin: 50px auto;
+    background: var(--resume-bg);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-top {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.resume-top .rtop-left,
+.resume-top .rtop-right {
+    width: 50%;
+    padding: 35px;
+}
+
+.resume-top .rtop-left {
+    background: var(--rleft-bg);
+}
+
+.resume-top .rtop-right {
+    background: var(--rright-bg);
+}
+
+.resume-top .rtop-left .name {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.resume-top .rtop-left .role,
+.resume-top .rtop-right .hire {
+    color: var(--primary-text-clr);
+    font-size: 16px;
+    margin-top: 15px;
+    letter-spacing: 5px;
+}
+
+.resume-top .rtop-right p {
+    font-size: 15px;
+    margin-top: 6px;
+    text-align: end;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.resume-top .r-profile-pic {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.resume-top .r-profile-pic img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.para {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-weight: 600;
+    background: #e3e5ec;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: "Bree Serif";
+}
+
+.resume-center {
+    padding: 75px 35px 35px;
+    text-align: center;
+    letter-spacing: 1px;
+    background: #e3e5ec;
+}
+
+.resume-bottom {
+    display: flex;
+}
+
+.resume-bottom div {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.resume-bottom .rb-skills,
+.resume-bottom .rb-education,
+.resume-bottom .rb-experience,
+.resume-bottom .rb-contact {
+    margin-bottom: 30px;
+}
+
+.resume-bottom .rbottom-left ul li,
+.resume-bottom .rbottom-right ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.resume-bottom .rbottom-left .rb-skills,
+.resume-bottom .rbottom-left .rb-hobbies {
+    padding-left: 10px;
+}
+
+ul li p {
+    margin-left: 8px;
+}
